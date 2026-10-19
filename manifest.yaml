@@ -1,0 +1,9 @@
+specVersion: "1"
+id: lax-434175
+leanVersion: "v4.33.0"
+mathlibVersion: "db584cd6d46c92f209a44c0f1c829460d327499d"
+title: "Scheduling problems assembled from constraint modules"
+authors:
+  - name: Yuval Itzhaki
+    github: yuvalyitz
+bibEntries: []

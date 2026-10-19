@@ -1,0 +1,84 @@
+name = "Lax434175Proofs"
+defaultTargets = ["Lax434175Proofs"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[require]]
+name = "Lax434175"
+path = "../concepts"
+
+# the word RAM and computation within an instruction bound (lax-808846, registered)
+[[require]]
+name = "Lax808846"
+git = "https://github.com/lax-archive/lax-submissions"
+rev = "9394e531cc51cb67a0214bca3f9264dfe97ba5c7"
+subDir = "word-ram/concepts"
+
+# parameterized problems on words, FPT and fpt-reductions (lax-888481, registered)
+[[require]]
+name = "Lax888481"
+git = "https://github.com/yuvalyitz/isem-lax"
+rev = "3cdde85ce7b7eed2938def9b9be0b5434f615c0f"
+subDir = "concepts"
+
+# Construction 1 of lax-888481 as a word map and its word RAM program, reused as
+# proved theorems (proof package of lax-888481, registered)
+[[require]]
+name = "Lax888481Proofs"
+git = "https://github.com/yuvalyitz/isem-lax"
+rev = "3cdde85ce7b7eed2938def9b9be0b5434f615c0f"
+subDir = "proofs"
+
+# fpt-reductions, FPT and the reduction calculus (lax-496464, registered)
+[[require]]
+name = "Lax496464"
+git = "https://github.com/yuvalyitz/jitflowshop-lax"
+rev = "605f30b327a2385b4617a6e7123975faadca7ebd"
+subDir = "concepts"
+
+# the binary encoding of words and its bit size (lax-759944, registered)
+[[require]]
+name = "Lax759944"
+git = "https://github.com/szymtor/RAM-TM"
+rev = "134e398cef46599371df99f10c9007bc34ba3868"
+subDir = "concepts"
+
+# the IMP+ language, its compiler to the word RAM and its reasoning rules
+# (proof package of lax-808846, registered)
+[[require]]
+name = "Lax808846Proofs"
+git = "https://github.com/lax-archive/lax-submissions"
+rev = "9394e531cc51cb67a0214bca3f9264dfe97ba5c7"
+subDir = "word-ram/proofs"
+
+# the classes P and NP (lax-434930, registered)
+[[require]]
+name = "Lax434930"
+git = "https://github.com/EdouardBonnet/classical-complexity"
+rev = "0c0840319318215fd7b36a9a822b81ce55cf6941"
+subDir = "concepts"
+
+[[lean_lib]]
+name = "Lax434175Proofs"
+
+# single-machine scheduling with release times, deadlines and two job lengths is NP-hard
+# (lax-391470, registered), for the end-to-end NP-hardness of 1|r_j|L_max
+[[require]]
+name = "Lax391470"
+git = "https://github.com/yuvalyitz/rjlmax-lax"
+rev = "6268ca44402d39b523265ae02123b467fe8af2d4"
+subDir = "concepts"
+
+# Cook–Levin: satisfiability is NP-hard (lax-429075, registered), for the explicit
+# reduction behind the strong NP-hardness of 1|r_j|L_max
+[[require]]
+name = "Lax429075"
+git = "https://github.com/EdouardBonnet/cook-levin"
+rev = "905f2da2698d5b38002676f74632aa716e731389"
+subDir = "concepts"
